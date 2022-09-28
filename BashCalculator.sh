@@ -25,26 +25,26 @@ OPR = $($opr | tr [:lower:])
 
 echo $OPR #Testing Input Functionality
  
-if [ $num2 -eq 0 && ${OPR} == division ]
+if [ $var2 -eq 0 && ${OPR} == division ]
 then 
 	echo "Cannot Divide by Zero"
-	#EXIT0 edited out here - Testing Input Functionality
+exit 0
 fi 
 case ${OPR} in
 	division)
-		quo = $( expr \$num1 / $num2 )
+		quo = $( expr $var1 / $var2 )
 		echo 'The quotient of $num1 and $num2 is $quo'
 	;;
 	multiplication)
-		prod=$( expr \$num1 * $num2 )
+		prod=$( expr $var1 * $var2 )
 		echo 'The product of $num1 and $num2 is $prod'
 	;;
 	addition)
-		sum=$( expr \$num1 + $num2 )
+		sum=$( expr $var1 + $var2 )
 		echo 'The product of $num1 and $num2 is $sum'
 	;;
 	subtraction)
-		diff=$( expr \$num1 - $num2 )
+		diff=$( expr $var1 - $var2 )
 		echo 'The difference of $num1 and $num2 is $diff'
 	;;
 esac
