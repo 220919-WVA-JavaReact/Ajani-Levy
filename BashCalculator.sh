@@ -1,51 +1,28 @@
-#!/bin/bash 
+#!/bin/bash
 
-echo "Welcome to my Bash Calculator!"
+echo "Welcome to my Calculator";
 
-echo "Enter Two whole numbers and a basic operation and this program will 
-compute!"
- 
-echo "Operations are as follows: Multiplicaton, Division, Subtraction, 
-Addition"
- 
-echo "Enter two whole integers now (positive or negative), in the order of 
-the calculation you want first"
-read -p '1st whole integer ' var1
-read -p '2nd whole integer ' var2
+echo "Enter Two whole numbers and a basic operation and this program will
+compute!"; 
 
-echo $var1
-echo $var2 #Testing Input Functionality
+echo "Operations are as follows: Multiplicaton, Division, Subtraction,
+Addition (* / - +) ";
 
-echo "Enter an single operation now, type the string instead of a symbol!"
-read -p 'Division or Multiplication?  Subtraction or Addition? ' opr
+echo "Enter two whole integers now (positive or negative) with an operand
+inbetween";
 
-echo $opr #Testing Input Functionality
+read Var1 Opr1 Var2
+        
+Vari1=$Var1
+Opre1=$Opr1
+Vari2=$Var2
 
-OPR = $($opr | tr [:lower:])
+echo $Vari1 and $Opre1 and $Vari2 are your numbers and operand;
 
-echo $OPR #Testing Input Functionality
- 
-if [ $var2 -eq 0 && ${OPR} == division ]
-then 
-	echo "Cannot Divide by Zero"
-exit 0
-fi 
-case ${OPR} in
-	division)
-		quo = $( expr $var1 / $var2 )
-		echo 'The quotient of $num1 and $num2 is $quo'
-	;;
-	multiplication)
-		prod=$( expr $var1 * $var2 )
-		echo 'The product of $num1 and $num2 is $prod'
-	;;
-	addition)
-		sum=$( expr $var1 + $var2 )
-		echo 'The product of $num1 and $num2 is $sum'
-	;;
-	subtraction)
-		diff=$( expr $var1 - $var2 )
-		echo 'The difference of $num1 and $num2 is $diff'
-	;;
-esac
-echo 'Thanks for Calculating!'
+Calculation=$( expr $Vari1 $Opre1 $Vari2 )
+if [ $Vari2 -eq 0 ] && [ $Opre1 == / ]
+then
+        echo "Error, Cannot Divide by Zero";
+fi
+echo $Calculation
+
