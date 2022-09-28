@@ -1,0 +1,80 @@
+﻿Students
+* Ajani Levy
+* Billy Jean
+* Micheal Jackson 
+* Drake Blair
+* Lizzy Cooper
+* Brick Cooper
+* D.B Cooper
+* Mike Saul
+* Jimmy Dean
+   * Student Columns 
+      * Name (varchar) (20)
+      * Address (varchar) (20)
+      * Primary Caregiver (varchar) (20)
+      * Sport or Club (Mandatory) (varchar) (20)
+      * GPA (int) 
+      * Phone Number (int)
+      * Student_ID (int)
+      * School Email (varchar) (20)
+
+
+
+
+Teachers
+* Jane Doe
+* Brian Edwards
+* Kimmy Golly
+* Chancey Brown
+* Jimmy Lollipop
+* Caesar Billops
+   * Teacher Columns
+   * Teacher_ID (int)
+   * Subject(s) Taught (varchar) (20)
+   * Name (varchar) (20)
+   * Street Address (varchar) (20)
+   * Phone Number (int)
+   * Email Address (varchar) (20)
+
+
+
+
+
+
+Courses
+* AP Computer Science (Science) 
+* Remedial Physical Education (Club) (Required)
+* AP Calculus (Math) 
+* Statistics (Math) (Required)
+* History I (History) (Required)
+* History II (History) (Required)
+* History in the 1800’s
+* American Government (Economics) (History) (Required)
+* British Government (Economics) (History)
+   * Course Columns
+      * Hours (int) 
+      * Homework (int) 
+      * Tests (int) 
+      * Course_ID (int)
+      * Required for Graduation (bool)
+      * SAT equivalent (bool)
+
+
+
+
+Topics
+* Animals
+* Science 
+* Math
+* Politics
+* Economy
+* Biology
+* Evolution
+* Astronomy
+* Nutrition
+* Remidial 
+* Advanced
+* Geography
+   * Topic Columns
+   * Connect up to Courses
+   * Topic_ID? (int)
