@@ -1,0 +1,27 @@
+create table students (
+	studentName varchar(15),
+	Address varchar(30),
+	primaryCaregiver varchar(20),
+	Extracurricular varchar(15),
+	GPA int,
+	phoneNumber int,
+	studentID int,
+	studentEmail int,
+
+);
+create table teachers (
+	teacherID int,
+	name varchar (20),
+	subjects varchar(30),
+	StreetAddress varchar (30),
+	phoneNumber int,
+	emailAddress varchar (20)
+);
+create table courses (
+	Hours int;
+	HomeworkSet varchar(30);
+	Tests int;
+	Course_ID int;
+	GraduationRequirement bool;
+	SATequivalent bool;
+	
